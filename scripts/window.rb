@@ -3,7 +3,7 @@ class Window < Gosu::Window
 	def initialize
 		#Criar Janela do Jogo Para o Tamanho Definido e se vai ou não estar em FULLSCREEN
 		super(650,320,false)
-		self.caption = "C. Survive VR. 1.0 - REDES IFRN 2015.2N" #Determina Titulo da Janela
+		self.caption = "C. Survive VR. 1.0.1 - REDES IFRN 2015.2N" #Determina Titulo da Janela
 		@player = Player.new(self) #Carrega Classe Player (jogador)
 		#Carrega as Classes Inimigos
 		@enemy = Enemy.new(self)
