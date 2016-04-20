@@ -3,7 +3,7 @@ class Enemy2
     attr_writer :x
     def initialize(window)
         @window = window
-        @icon = Gosu::Image.load_tiles(@window, "imagen/enemy2.png",-3,-1,true)
+        @icon = Gosu::Image.load_tiles(@window, "imagen/enemy.png",-3,-1,true)
         @x = -150
         @y = window.height-180
         @alive = true
