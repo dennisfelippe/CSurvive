@@ -1,6 +1,6 @@
 class Enemy
-    attr_reader :x, :y, :alive, :life
-    attr_writer :x
+    attr_reader :y, :alive, :life
+    attr_accessor :x
     def initialize(window)
         @window = window
         @icon = Gosu::Image.load_tiles(@window, "imagen/enemy.png",-3,-1,true)

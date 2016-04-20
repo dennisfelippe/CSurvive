@@ -1,7 +1,6 @@
 class Player
-    attr_reader :life, :x, :y, :hit, :direction, :moving, :life_x, :level, :exp
-    attr_writer :life_x, :exp, :level
-
+	attr_reader :life, :x, :y, :hit, :direction, :moving
+	attr_accessor :level, :exp, :life_x
     def initialize(window)
         @window = window
         @icon = Gosu::Image.load_tiles(@window, "imagen/player_stand.png",71,72,true)
