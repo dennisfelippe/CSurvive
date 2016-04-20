@@ -46,7 +46,7 @@ class Player
             end
             lifeup
             @life_time += 1.0/60
-                if @life_time > 59
+                if @life_time > 45
                     @life_grow = true
                     @life_time = 0
                 end
@@ -163,7 +163,7 @@ class Player
              end
             elsif @direction == :right
              if Gosu::distance(@life_x,180, @x, 180) < 2
-             @life += 7+rand(5)
+             @life += 10+rand(5)
              @life_sound.play
              @life_grow = false
              @life_time = 0
